@@ -3,7 +3,7 @@
         const mobileMenu = document.getElementById('mobile-menu');
         
         menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('hidden');
         });
         
         // Back to Top Button
@@ -64,3 +64,5 @@
                 }
             });
         });
+
+        
