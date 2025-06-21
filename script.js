@@ -5,6 +5,9 @@
         menuToggle.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+        window.addEventListener('load', () => {
+        mobileMenu.classList.add('hidden');
+    });
         
         // Back to Top Button
         const backToTopButton = document.getElementById('back-to-top');
