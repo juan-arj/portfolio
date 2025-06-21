@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Victor | Analista de BI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#0f172a',
+                        primary: '#0ea5e9',
+                        secondary: '#6366f1',
+                        light: '#f8fafc',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="fixed w-full bg-white bg-opacity-90 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex items-center space-x-2">
+                    <div class="h-10 w-10 rounded-lg gradient-bg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">JV</span>
+                    </div>
+                    <span class="font-bold text-xl text-gray-800">Juan Victor</span>
+                </a>
+
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-primary transition-colors">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary transition-colors">Sobre</a>
+                    <a href="#services" class="text-gray-600 hover:text-primary transition-colors">Serviços</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-primary transition-colors">Portfólio</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-primary transition-colors">Depoimentos</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary transition-colors">Contato</a>
+                </nav>
+
+                <button class="md:hidden text-gray-600 focus:outline-none" id="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu md:hidden bg-white shadow-lg absolute w-full" id="mobile-menu">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="#home" class="text-gray-600 hover:text-primary transition-colors">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-primary transition-colors">Sobre</a>
+                <a href="#services" class="text-gray-600 hover:text-primary transition-colors">Serviços</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-primary transition-colors">Portfólio</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-primary transition-colors">Depoimentos</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary transition-colors">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 relative overflow-hidden">
+        <!-- Background Blobs -->
+        <div class="blob bg-blue-300 w-96 h-96 top-20 -left-48"></div>
+        <div class="blob bg-indigo-300 w-96 h-96 bottom-0 right-0"></div>
+
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <span
+                        class="inline-block py-1 px-3 rounded-full text-sm font-semibold mb-6 bg-blue-100 text-blue-800">Analista
+                        de Business Intelligence</span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Juan Victor Fernandez de Araujo <br>
+                        <!-- <span class="gradient-text">Fernandez de Araujo</span> -->
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                        Transformando dados complexos em insights valiosos e dashboards interativos que impulsionam
+                        decisões estratégicas de negócios.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#portfolio"
+                            class="px-6 py-3 rounded-lg gradient-bg text-white font-medium hover:opacity-90 transition-opacity">
+                            Ver Projetos
+                        </a>
+                        <a href="#contact"
+                            class="px-6 py-3 rounded-lg border-2 border-primary text-primary font-medium hover:bg-primary hover:text-white transition-colors">
+                            Contato
+                        </a>
+                    </div>
+
+                    <div class="mt-12 flex items-center space-x-6">
+                        <a href="https://www.linkedin.com/in/juan-victor-araujo/" target="_blank"
+                            class="text-gray-600 hover:text-primary transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-primary transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-primary transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-primary transition-colors">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div
+                            class="w-72 h-72 md:w-96 md:h-96 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full absolute -top-10 -right-10">
+                        </div>
+                        <div
+                            class="w-72 h-72 md:w-96 md:h-96 bg-gradient-to-br from-secondary/20 to-primary/20 rounded-full absolute -bottom-10 -left-10">
+                        </div>
+                        <div class="relative z-10 animate-float">
+                            <svg class="w-72 h-72 md:w-96 md:h-96" viewBox="0 0 500 500" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="100" y="100" width="300" height="300" rx="20" fill="white" stroke="#0ea5e9"
+                                    stroke-width="5" />
+                                <rect x="120" y="130" width="260" height="60" rx="5" fill="#0ea5e9" />
+                                <rect x="120" y="210" width="120" height="170" rx="5" fill="#f1f5f9" />
+                                <rect x="260" y="210" width="120" height="80" rx="5" fill="#f1f5f9" />
+                                <rect x="260" y="300" width="120" height="80" rx="5" fill="#f1f5f9" />
+                                <circle cx="180" cy="295" r="50" fill="#0ea5e9" fill-opacity="0.2" stroke="#0ea5e9"
+                                    stroke-width="5" />
+                                <path d="M150 295L170 315L210 275" stroke="#0ea5e9" stroke-width="5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <rect x="280" y="230" width="80" height="10" rx="2" fill="#0ea5e9" />
+                                <rect x="280" y="250" width="60" height="10" rx="2" fill="#0ea5e9" fill-opacity="0.7" />
+                                <rect x="280" y="270" width="70" height="10" rx="2" fill="#0ea5e9" fill-opacity="0.5" />
+                                <rect x="280" y="320" width="80" height="10" rx="2" fill="#0ea5e9" />
+                                <rect x="280" y="340" width="60" height="10" rx="2" fill="#0ea5e9" fill-opacity="0.7" />
+                                <rect x="280" y="360" width="70" height="10" rx="2" fill="#0ea5e9" fill-opacity="0.5" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <!-- <h2 class="text-3xl md:text-4xl font-bold mb-4">Sobre <span class="gradient-text">Mim</span></h2> -->
+                <!-- <div class="w-24 h-1 gradient-bg mx-auto mb-8 rounded-full"></div> -->
+                <!-- <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Conheça um pouco mais sobre minha trajetória e paixão por transformar dados em insights valiosos.
+                </p> -->
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-2/5">
+                    <div class="relative">
+                        <div class="w-full h-80 bg-gray-200 rounded-2xl overflow-hidden shadow-lg">
+                            <svg class="w-full h-full text-gray-400" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
+                                    stroke="currentColor" stroke-width="1.5" />
+                                <path d="M20 21C20 16.5817 16.4183 13 12 13C7.58172 13 4 16.5817 4 21"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <!-- <div class="absolute -bottom-4 -right-4 w-32 h-32 gradient-bg rounded-xl"></div> -->
+                    </div>
+                </div>
+
+                <div class="md:w-3/5">
+                    <div class="inline-block mb-6">
+                        <span class="px-4 py-2 rounded-full bg-primary/10 text-primary font-medium">Sobre Mim</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Olá, sou Juan Victor Fernandez de Araujo</h2>
+
+                    <div class="space-y-6">
+                        <p class="text-gray-600">
+                            Sou um profissional apaixonado por dados e visualização de informações, com experiência em
+                            transformar conjuntos complexos de dados em insights acionáveis e dashboards interativos que
+                            auxiliam na tomada de decisões estratégicas.
+                        </p>
+
+                        <p class="text-gray-600">
+                            Minha especialidade é o desenvolvimento de soluções em Power BI, criando relatórios
+                            dinâmicos e painéis intuitivos que revelam tendências ocultas e oportunidades de negócio.
+                            Tenho habilidade em modelagem de dados, DAX, SQL e outras tecnologias essenciais para
+                            análise de dados eficiente.
+                        </p>
+
+                        <p class="text-gray-600">
+                            Além das habilidades técnicas, possuo forte capacidade de comunicação, traduzindo conceitos
+                            complexos de dados em informações compreensíveis para stakeholders de todos os níveis,
+                            garantindo que insights valiosos sejam efetivamente implementados nas estratégias de
+                            negócio.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold">Formação</h3>
+                                    <p class="text-gray-600">Tecnólogo em Banco de Dados</p>
+                                </div>
+                            </div>
+
+                            <!-- <div class="flex items-center">
+                            <div class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                                    <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold">Experiência</h3>
+                                <p class="text-gray-600">5+ anos em Business Intelligence</p>
+                            </div>
+                        </div> -->
+
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#contact"
+                                class="gradient-bg text-white font-medium px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
+                                Entre em Contato
+                            </a>
+                            <a href="CurrículoJuanVictor2025.pdf" target="_blank"
+                                class="flex items-center text-gray-700 hover:text-primary transition-colors">
+                                <span class="mr-2">Baixar CV</span>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Habilidades Section -->
+    </section>
+    <section id="skills" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-2">Minhas Habilidades</h2>
+                <div class="w-20 h-1 bg-accent mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Power BI -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-accent" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M13.5,1.5C15.8,1.5 18,2.1 19.5,3.5C22,5.8 21.5,9.4 21,11.5C20.5,13.5 19.5,15.5 18,17C16.5,18.5 14.5,19 12.5,19C10.5,19 8.5,18.5 7,17C5.5,15.5 4.5,13.5 4,11.5C3.5,9.5 3,5.8 5.5,3.5C7,2.1 9.2,1.5 11.5,1.5H13.5M13.5,3.5H11.5C9.8,3.5 8.1,4 7,5C5.2,6.5 5.5,9.3 6,11C6.5,12.7 7.2,14.3 8.5,15.5C9.7,16.7 11.3,17.5 13,17.5C14.7,17.5 16.3,16.7 17.5,15.5C18.8,14.3 19.5,12.7 20,11C20.5,9.3 20.8,6.5 19,5C17.9,4 16.2,3.5 14.5,3.5H13.5M12,5.5C13.9,5.5 15.5,7.1 15.5,9C15.5,10.9 13.9,12.5 12,12.5C10.1,12.5 8.5,10.9 8.5,9C8.5,7.1 10.1,5.5 12,5.5M12,7.5C11.2,7.5 10.5,8.2 10.5,9C10.5,9.8 11.2,10.5 12,10.5C12.8,10.5 13.5,9.8 13.5,9C13.5,8.2 12.8,7.5 12,7.5M7,15V21H11V15H7M13,15V21H17V15H13Z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold">Power BI</h3>
+                    </div>
+                    <div class="mb-2">
+                        <div class="flex justify-between mb-1">
+                            <br>
+                            <!-- <span class="text-sm font-medium">Avançado</span> -->
+                            <!-- <span class="text-sm font-medium">95%</span> -->
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill gradient-bg" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mt-4">Desenvolvimento de dashboards interativos, modelagem de dados, DAX
+                        avançado, integração com diversas fontes de dados.</p>
+                </div>
+
+                <!-- SQL -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-accent" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold">SQL</h3>
+                    </div>
+                    <div class="mb-2">
+                        <br>
+                        <!-- <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium">Avançado</span>
+                            <span class="text-sm font-medium">90%</span>
+                        </div> -->
+                        <div class="progress-bar">
+                            <div class="progress-fill gradient-bg" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mt-4">Consultas complexas, otimização de performance, stored procedures,
+                        modelagem de banco de dados relacionais.</p>
+                </div>
+
+                <!-- Data Analysis -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-accent" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M7,7V9H9V7H7M11,7V9H13V7H11M15,7V9H17V7H15M7,11V13H9V11H7M11,11V13H13V11H11M15,11V13H17V11H15M7,15V17H9V15H7M11,15V17H13V15H11M15,15V17H17V15H15Z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold">Análise de Dados</h3>
+                    </div>
+                    <div class="mb-2">
+                        <br>
+                        <!-- <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium">Avançado</span>
+                            <span class="text-sm font-medium">95%</span>
+                        </div> -->
+                        <div class="progress-bar">
+                            <div class="progress-fill gradient-bg" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mt-4">Análise estatística, identificação de tendências, visualização de
+                        dados, storytelling com dados.</p>
+                </div>
+
+                <!-- Excel -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-accent" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M21.17,3.25Q21.5,3.25 21.76,3.5Q22,3.75 22,4.08V19.92Q22,20.25 21.76,20.5Q21.5,20.75 21.17,20.75H7.83Q7.5,20.75 7.24,20.5Q7,20.25 7,19.92V4.08Q7,3.75 7.24,3.5Q7.5,3.25 7.83,3.25H21.17M2,3V21H5V3H2M16.5,12.67H14.17V15H16.5V12.67M16.5,9H14.17V11.33H16.5V9M16.5,5.33H14.17V7.67H16.5V5.33M16.5,16.33H14.17V18.67H16.5V16.33M12.83,9H10.5V11.33H12.83V9M12.83,5.33H10.5V7.67H12.83V5.33M12.83,16.33H10.5V18.67H12.83V16.33M12.83,12.67H10.5V15H12.83V12.67Z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold">Excel</h3>
+                    </div>
+                    <div class="mb-2">
+                        <br>
+                        <!-- <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium">Avançado</span>
+                            <span class="text-sm font-medium">95%</span>
+                        </div> -->
+                        <div class="progress-bar">
+                            <div class="progress-fill gradient-bg" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mt-4">Fórmulas avançadas, tabelas dinâmicas, macros, VBA, modelagem
+                        financeira.</p>
+                </div>
+
+                <!-- ETL -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-accent" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19.35,10.04C18.67,6.59 15.64,4 12,4C9.11,4 6.6,5.64 5.35,8.04C2.34,8.36 0,10.91 0,14A6,6 0 0,0 6,20H19A5,5 0 0,0 24,15C24,12.36 21.95,10.22 19.35,10.04M19,18H6A4,4 0 0,1 2,14C2,11.95 3.53,10.24 5.56,10.03L6.63,9.92L7.13,8.97C8.08,7.14 9.94,6 12,6C14.62,6 16.88,7.86 17.39,10.43L17.69,11.93L19.22,12.04C20.78,12.14 22,13.45 22,15A3,3 0 0,1 19,18M8,13H10.55V16H13.45V13H16L12,9L8,13Z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold">ETL</h3>
+                    </div>
+                    <div class="mb-2">
+                        <br>
+                        <!-- <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium">Avançado</span>
+                            <span class="text-sm font-medium">95%</span>
+                        </div> -->
+                        <div class="progress-bar">
+                            <div class="progress-fill gradient-bg" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mt-4">Processos de extração, transformação e carga de dados, integração de
+                        múltiplas fontes, limpeza de dados.</p>
+                </div>
+
+                <!-- Data Visualization -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                            <svg class="w-8 h-8 text-accent" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22,21H2V3H4V19H6V10H10V19H12V6H16V19H18V14H22V21Z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold">Visualização de Dados</h3>
+                    </div>
+                    <div class="mb-2">
+                        <br>
+                        <!-- <div class="flex justify-between mb-1">
+                            <span class="text-sm font-medium">Avançado</span>
+                            <span class="text-sm font-medium">95%</span>
+                        </div> -->
+                        <div class="progress-bar">
+                            <div class="progress-fill gradient-bg" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mt-4">Criação de visualizações eficazes, design de dashboards, princípios de
+                        UX para análise de dados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Meu <span class="gradient-text">Portfólio</span></h2>
+                <div class="w-24 h-1 gradient-bg mx-auto mb-8 rounded-full"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Conheça alguns dos projetos de análise de dados e business intelligence que desenvolvi.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden project-card">
+                    <div class="h-48 bg-gray-200 relative">
+                        
+                        <svg class="w-full h-full text-gray-400" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            
+                            <path d="M16 8V16M12 11V16M8 14V16M6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent project-overlay flex items-end">
+                            <div class="p-4 text-white">
+                                <h4 class="font-bold">Dashboard de Vendas</h4>
+                                <p class="text-sm opacity-80">Power BI, SQL, DAX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Dashboard de Vendas Regionais</h3>
+                        <p class="text-gray-600 mb-4">
+                            Desenvolvimento de um sistema completo de análise de vendas para uma rede varejista
+                            nacional, identificando tendências regionais e oportunidades de crescimento.
+                        </p>
+                        <a href="https://app.powerbi.com/reportEmbed?reportId=7410c664-768c-4608-a940-22eeb0aaf0da&autoAuth=true&ctid=da49a844-e2e3-40af-86a6-c3819d704f49" target="_blank"
+                            class="text-primary font-medium hover:text-secondary transition-colors flex items-center">
+                            Ver detalhes
+                            <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden project-card">
+                    <div class="h-48 bg-gray-200 relative">
+                        <svg class="w-full h-full text-gray-400" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 19V13C9 11.8954 8.10457 11 7 11H5C3.89543 11 3 11.8954 3 13V19C3 20.1046 3.89543 21 5 21H7C8.10457 21 9 20.1046 9 19ZM9 19V9C9 7.89543 9.89543 7 11 7H13C14.1046 7 15 7.89543 15 9V19M9 19C9 20.1046 9.89543 21 11 21H13C14.1046 21 15 20.1046 15 19M15 19V5C15 3.89543 15.8954 3 17 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H17C15.8954 21 15 20.1046 15 19Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent project-overlay flex items-end">
+                            <div class="p-4 text-white">
+                                <h4 class="font-bold">KPIs Financeiros</h4>
+                                <p class="text-sm opacity-80">Power BI, Excel, Modelagem</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">KPIs Financeiros</h3>
+                        <p class="text-gray-600 mb-4">
+                            Criação de um dashboard executivo para monitoramento em tempo real dos principais
+                            indicadores financeiros, facilitando a tomada de decisões estratégicas.
+                        </p>
+                        <a href="#"
+                            class="text-primary font-medium hover:text-secondary transition-colors flex items-center">
+                            Ver detalhes
+                            <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden project-card">
+                    <div class="h-48 bg-gray-200 relative">
+                        <svg class="w-full h-full text-gray-400" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 7V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V7M21 7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7M21 7L12 13L3 7"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent project-overlay flex items-end">
+                            <div class="p-4 text-white">
+                                <h4 class="font-bold">Marketing Digital</h4>
+                                <p class="text-sm opacity-80">Power BI, Python, API</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Análise de Marketing Digital</h3>
+                        <p class="text-gray-600 mb-4">
+                            Desenvolvimento de um sistema de análise para campanhas de marketing digital, permitindo
+                            visualização de ROI, conversões e comportamento do cliente.
+                        </p>
+                        <a href="#"
+                            class="text-primary font-medium hover:text-secondary transition-colors flex items-center">
+                            Ver detalhes
+                            <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden project-card">
+                    <div class="h-48 bg-gray-200 relative">
+                        <svg class="w-full h-full text-gray-400" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent project-overlay flex items-end">
+                            <div class="p-4 text-white">
+                                <h4 class="font-bold">Monitoramento de Produção</h4>
+                                <p class="text-sm opacity-80">Power BI, IoT, SQL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Monitoramento de Produção</h3>
+                        <p class="text-gray-600 mb-4">
+                            Sistema de monitoramento em tempo real para linhas de produção industrial, com alertas
+                            automáticos e análise de eficiência operacional.
+                        </p>
+                        <a href="#"
+                            class="text-primary font-medium hover:text-secondary transition-colors flex items-center">
+                            Ver detalhes
+                            <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden project-card">
+                    <div class="h-48 bg-gray-200 relative">
+                        <svg class="w-full h-full text-gray-400" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17 8H19C20.1046 8 21 8.89543 21 10V16C21 17.1046 20.1046 18 19 18H17M17 8V18M17 8H7M17 18H7M7 18H5C3.89543 18 3 17.1046 3 16V10C3 8.89543 3.89543 8 5 8H7M7 8V18M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent project-overlay flex items-end">
+                            <div class="p-4 text-white">
+                                <h4 class="font-bold">Análise de Lucratividade</h4>
+                                <p class="text-sm opacity-80">Power BI, DAX, Excel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Análise de Lucratividade</h3>
+                        <p class="text-gray-600 mb-4">
+                            Dashboard para análise detalhada de lucratividade por produto, cliente e região,
+                            identificando oportunidades de otimização e crescimento.
+                        </p>
+                        <a href="#"
+                            class="text-primary font-medium hover:text-secondary transition-colors flex items-center">
+                            Ver detalhes
+                            <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden project-card">
+                    <div class="h-48 bg-gray-200 relative">
+                        <svg class="w-full h-full text-gray-400" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 12H15M12 9V15M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent project-overlay flex items-end">
+                            <div class="p-4 text-white">
+                                <h4 class="font-bold">Previsão de Demanda</h4>
+                                <p class="text-sm opacity-80">Power BI, Python, ML</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Previsão de Demanda</h3>
+                        <p class="text-gray-600 mb-4">
+                            Sistema de previsão de demanda baseado em machine learning para otimização de estoque e
+                            planejamento de produção.
+                        </p>
+                        <a href="#"
+                            class="text-primary font-medium hover:text-secondary transition-colors flex items-center">
+                            Ver detalhes
+                            <svg class="w-4 h-4 ml-1" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="px-6 py-3 rounded-lg gradient-bg text-white font-medium hover:opacity-90 transition-opacity inline-block">
+                    Ver todos os projetos
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Entre em <span class="gradient-text">Contato</span></h2>
+                <div class="w-24 h-1 gradient-bg mx-auto mb-8 rounded-full"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Interessado em trabalhar juntos? Entre em contato para discutirmos como posso ajudar a transformar
+                    seus dados em insights valiosos.
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6">Informações de Contato</h3>
+
+                            <div class="space-y-6 mb-8">
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3 8L10.8906 13.2604C11.5624 13.7083 12.4376 13.7083 13.1094 13.2604L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-semibold mb-1">Email</h4>
+                                        <p>juanvictor1511@hotmail.com</p>
+                                        <!-- <a  class="text-gray-600 hover:text-primary transition-colors">juanvictor1511@hotmail.com</a> -->
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-semibold mb-1">Telefone</h4>
+                                        <p>(21) 96955-9130</p>
+                                        <!-- <a href="tel:+5521969559130" class="text-gray-600 hover:text-primary transition-colors">(21) 96955-9130</a> -->
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-12 h-12 rounded-full gradient-bg flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M17.6569 16.6569C16.7202 17.5935 14.7616 19.5521 13.4138 20.8999C12.6327 21.681 11.3677 21.6814 10.5866 20.9003C9.26234 19.576 7.34159 17.6553 6.34315 16.6569C3.21895 13.5327 3.21895 8.46734 6.34315 5.34315C9.46734 2.21895 14.5327 2.21895 17.6569 5.34315C20.781 8.46734 20.781 13.5327 17.6569 16.6569Z"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-semibold mb-1">Localização</h4>
+                                        <p class="text-gray-600">Rio de Janeiro, RJ - Brasil</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6">Conecte-se</h3>
+                            <p class="text-gray-600 mb-6">
+                                Estou disponível para oportunidades de emprego em tempo integral. Entre em contato por
+                                email ou telefone, ou conecte-se comigo nas redes sociais.
+                            </p>
+
+                            <h4 class="text-lg font-semibold mb-4">Redes Sociais</h4>
+                            <div class="flex gap-4">
+                                <a href="https://www.linkedin.com/in/juan-victor-araujo/" target="_blank"
+                                    class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white hover:opacity-90 transition-opacity">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white hover:opacity-90 transition-opacity">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white hover:opacity-90 transition-opacity">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#"
+                                    class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white hover:opacity-90 transition-opacity">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+
+                            <!-- <div class="mt-8">
+                            <a href="mailto:juanvictor1511@hotmail.com" class="px-6 py-3 rounded-lg gradient-bg text-white font-medium hover:opacity-90 transition-opacity inline-flex items-center">
+                                <span>Enviar Email</span>
+                                <svg class="w-5 h-5 ml-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <a href="#" class="flex items-center space-x-2">
+                        <!-- <div class="h-10 w-10 rounded-lg gradient-bg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">JV</span>
+                        </div>
+                        <span class="font-bold text-xl text-white">Juan Victor</span> -->
+                    </a>
+                    <p class="text-gray-400 mt-4 max-w-md">
+                        Transformando dados complexos em insights valiosos e dashboards interativos que impulsionam
+                        decisões estratégicas de negócios.
+                    </p>
+                </div>
+
+                <div class="flex flex-col md:flex-row gap-8 md:gap-16">
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Links Rápidos</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+                            <li><a href="#about" class="text-gray-400 hover:text-primary transition-colors">Sobre</a>
+                            </li>
+                            <li><a href="#services"
+                                    class="text-gray-400 hover:text-primary transition-colors">Serviços</a></li>
+                            <li><a href="#portfolio"
+                                    class="text-gray-400 hover:text-primary transition-colors">Portfólio</a></li>
+                            <li><a href="#contact"
+                                    class="text-gray-400 hover:text-primary transition-colors">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Contato</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope mr-2 text-primary"></i>
+                                <span class="text-gray-400">juanvictor1511@hotmail.com</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone mr-2 text-primary"></i>
+                                <span class="text-gray-400">(21) 96955-9130</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-map-marker-alt mr-2 text-primary"></i>
+                                <span class="text-gray-400">Rio de Janeiro, RJ - Brasil</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Redes Sociais</h4>
+                        <div class="flex gap-4">
+                            <a href="https://www.linkedin.com/in/juan-victor-araujo/" target="_blank"
+                                class="text-gray-400 hover:text-primary transition-colors">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-primary transition-colors">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">© 2025 Juan Victor. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" id="back-to-top"
+        class="fixed bottom-8 right-8 w-12 h-12 rounded-full gradient-bg flex items-center justify-center text-white shadow-lg opacity-0 invisible transition-all duration-300">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"> </script>
+</body>
+
+</html>
